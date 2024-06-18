@@ -1,0 +1,994 @@
+{
+  "$type": "MCP.OvenSchedulingAlgorithm.Interface.Implementation.Instance, MCP.OvenSchedulingAlgorithm",
+  "Name": "45RandomOvenSchedulingInstance-n50-k2-a2-",
+  "CreationDate": "2021-04-29T14:39:35.0848639+02:00",
+  "Machines": {
+    "$type": "System.Collections.Generic.Dictionary`2[[System.Int32, System.Private.CoreLib],[MCP.OvenSchedulingAlgorithm.Interface.IMachine, MCP.OvenSchedulingAlgorithm]], System.Private.CoreLib",
+    "1": {
+      "$type": "MCP.OvenSchedulingAlgorithm.Interface.Implementation.Machine, MCP.OvenSchedulingAlgorithm",
+      "Id": 1,
+      "Name": "Machine 1",
+      "MinCap": 0,
+      "MaxCap": 20,
+      "AvailabilityStart": [
+        "2020-12-07T10:57:00",
+        "2020-12-08T22:43:00",
+        "2020-12-11T04:37:00"
+      ],
+      "AvailabilityEnd": [
+        "2020-12-08T03:21:00",
+        "2020-12-10T13:13:00",
+        "2020-12-11T10:47:00"
+      ]
+    },
+    "2": {
+      "$type": "MCP.OvenSchedulingAlgorithm.Interface.Implementation.Machine, MCP.OvenSchedulingAlgorithm",
+      "Id": 2,
+      "Name": "Machine 2",
+      "MinCap": 0,
+      "MaxCap": 20,
+      "AvailabilityStart": [
+        "2020-12-03T11:30:00",
+        "2020-12-11T14:13:00"
+      ],
+      "AvailabilityEnd": [
+        "2020-12-06T15:06:00",
+        "2020-12-11T16:18:00"
+      ]
+    }
+  },
+  "Jobs": [
+    {
+      "$type": "MCP.OvenSchedulingAlgorithm.Interface.Implementation.Job, MCP.OvenSchedulingAlgorithm",
+      "Id": 1,
+      "Name": "Job 1",
+      "EarliestStart": "2020-12-01T00:32:00",
+      "LatestEnd": "2020-12-01T01:02:00",
+      "MinTime": 600,
+      "MaxTime": 6000,
+      "Size": 8,
+      "AttributeIdPerMachine": {
+        "$type": "System.Collections.Generic.Dictionary`2[[System.Int32, System.Private.CoreLib],[System.Int32, System.Private.CoreLib]], System.Private.CoreLib",
+        "1": 2,
+        "2": 2
+      },
+      "EligibleMachines": [
+        2
+      ]
+    },
+    {
+      "$type": "MCP.OvenSchedulingAlgorithm.Interface.Implementation.Job, MCP.OvenSchedulingAlgorithm",
+      "Id": 2,
+      "Name": "Job 2",
+      "EarliestStart": "2020-12-01T03:41:00",
+      "LatestEnd": "2020-12-01T04:57:00",
+      "MinTime": 3360,
+      "MaxTime": 6000,
+      "Size": 7,
+      "AttributeIdPerMachine": {
+        "$type": "System.Collections.Generic.Dictionary`2[[System.Int32, System.Private.CoreLib],[System.Int32, System.Private.CoreLib]], System.Private.CoreLib",
+        "1": 1,
+        "2": 1
+      },
+      "EligibleMachines": [
+        1
+      ]
+    },
+    {
+      "$type": "MCP.OvenSchedulingAlgorithm.Interface.Implementation.Job, MCP.OvenSchedulingAlgorithm",
+      "Id": 3,
+      "Name": "Job 3",
+      "EarliestStart": "2020-12-01T02:20:00",
+      "LatestEnd": "2020-12-01T02:24:00",
+      "MinTime": 180,
+      "MaxTime": 6000,
+      "Size": 9,
+      "AttributeIdPerMachine": {
+        "$type": "System.Collections.Generic.Dictionary`2[[System.Int32, System.Private.CoreLib],[System.Int32, System.Private.CoreLib]], System.Private.CoreLib",
+        "1": 2,
+        "2": 2
+      },
+      "EligibleMachines": [
+        2,
+        1
+      ]
+    },
+    {
+      "$type": "MCP.OvenSchedulingAlgorithm.Interface.Implementation.Job, MCP.OvenSchedulingAlgorithm",
+      "Id": 4,
+      "Name": "Job 4",
+      "EarliestStart": "2020-12-01T02:44:00",
+      "LatestEnd": "2020-12-01T03:06:00",
+      "MinTime": 840,
+      "MaxTime": 6000,
+      "Size": 17,
+      "AttributeIdPerMachine": {
+        "$type": "System.Collections.Generic.Dictionary`2[[System.Int32, System.Private.CoreLib],[System.Int32, System.Private.CoreLib]], System.Private.CoreLib",
+        "1": 1,
+        "2": 1
+      },
+      "EligibleMachines": [
+        1
+      ]
+    },
+    {
+      "$type": "MCP.OvenSchedulingAlgorithm.Interface.Implementation.Job, MCP.OvenSchedulingAlgorithm",
+      "Id": 5,
+      "Name": "Job 5",
+      "EarliestStart": "2020-12-01T01:05:00",
+      "LatestEnd": "2020-12-01T05:37:00",
+      "MinTime": 4260,
+      "MaxTime": 6000,
+      "Size": 6,
+      "AttributeIdPerMachine": {
+        "$type": "System.Collections.Generic.Dictionary`2[[System.Int32, System.Private.CoreLib],[System.Int32, System.Private.CoreLib]], System.Private.CoreLib",
+        "1": 2,
+        "2": 2
+      },
+      "EligibleMachines": [
+        1,
+        2
+      ]
+    },
+    {
+      "$type": "MCP.OvenSchedulingAlgorithm.Interface.Implementation.Job, MCP.OvenSchedulingAlgorithm",
+      "Id": 6,
+      "Name": "Job 6",
+      "EarliestStart": "2020-12-01T03:31:00",
+      "LatestEnd": "2020-12-01T09:38:00",
+      "MinTime": 5640,
+      "MaxTime": 6000,
+      "Size": 16,
+      "AttributeIdPerMachine": {
+        "$type": "System.Collections.Generic.Dictionary`2[[System.Int32, System.Private.CoreLib],[System.Int32, System.Private.CoreLib]], System.Private.CoreLib",
+        "1": 2,
+        "2": 2
+      },
+      "EligibleMachines": [
+        1
+      ]
+    },
+    {
+      "$type": "MCP.OvenSchedulingAlgorithm.Interface.Implementation.Job, MCP.OvenSchedulingAlgorithm",
+      "Id": 7,
+      "Name": "Job 7",
+      "EarliestStart": "2020-12-01T02:58:00",
+      "LatestEnd": "2020-12-01T06:33:00",
+      "MinTime": 3000,
+      "MaxTime": 6000,
+      "Size": 1,
+      "AttributeIdPerMachine": {
+        "$type": "System.Collections.Generic.Dictionary`2[[System.Int32, System.Private.CoreLib],[System.Int32, System.Private.CoreLib]], System.Private.CoreLib",
+        "1": 1,
+        "2": 1
+      },
+      "EligibleMachines": [
+        2,
+        1
+      ]
+    },
+    {
+      "$type": "MCP.OvenSchedulingAlgorithm.Interface.Implementation.Job, MCP.OvenSchedulingAlgorithm",
+      "Id": 8,
+      "Name": "Job 8",
+      "EarliestStart": "2020-12-01T00:12:00",
+      "LatestEnd": "2020-12-01T04:23:00",
+      "MinTime": 3960,
+      "MaxTime": 6000,
+      "Size": 20,
+      "AttributeIdPerMachine": {
+        "$type": "System.Collections.Generic.Dictionary`2[[System.Int32, System.Private.CoreLib],[System.Int32, System.Private.CoreLib]], System.Private.CoreLib",
+        "1": 1,
+        "2": 1
+      },
+      "EligibleMachines": [
+        1,
+        2
+      ]
+    },
+    {
+      "$type": "MCP.OvenSchedulingAlgorithm.Interface.Implementation.Job, MCP.OvenSchedulingAlgorithm",
+      "Id": 9,
+      "Name": "Job 9",
+      "EarliestStart": "2020-12-01T03:30:00",
+      "LatestEnd": "2020-12-01T09:07:00",
+      "MinTime": 5040,
+      "MaxTime": 6000,
+      "Size": 4,
+      "AttributeIdPerMachine": {
+        "$type": "System.Collections.Generic.Dictionary`2[[System.Int32, System.Private.CoreLib],[System.Int32, System.Private.CoreLib]], System.Private.CoreLib",
+        "1": 2,
+        "2": 2
+      },
+      "EligibleMachines": [
+        1,
+        2
+      ]
+    },
+    {
+      "$type": "MCP.OvenSchedulingAlgorithm.Interface.Implementation.Job, MCP.OvenSchedulingAlgorithm",
+      "Id": 10,
+      "Name": "Job 10",
+      "EarliestStart": "2020-12-01T02:56:00",
+      "LatestEnd": "2020-12-01T07:15:00",
+      "MinTime": 3360,
+      "MaxTime": 6000,
+      "Size": 7,
+      "AttributeIdPerMachine": {
+        "$type": "System.Collections.Generic.Dictionary`2[[System.Int32, System.Private.CoreLib],[System.Int32, System.Private.CoreLib]], System.Private.CoreLib",
+        "1": 1,
+        "2": 1
+      },
+      "EligibleMachines": [
+        2
+      ]
+    },
+    {
+      "$type": "MCP.OvenSchedulingAlgorithm.Interface.Implementation.Job, MCP.OvenSchedulingAlgorithm",
+      "Id": 11,
+      "Name": "Job 11",
+      "EarliestStart": "2020-12-01T02:56:00",
+      "LatestEnd": "2020-12-01T06:22:00",
+      "MinTime": 5460,
+      "MaxTime": 6000,
+      "Size": 9,
+      "AttributeIdPerMachine": {
+        "$type": "System.Collections.Generic.Dictionary`2[[System.Int32, System.Private.CoreLib],[System.Int32, System.Private.CoreLib]], System.Private.CoreLib",
+        "1": 1,
+        "2": 1
+      },
+      "EligibleMachines": [
+        1,
+        2
+      ]
+    },
+    {
+      "$type": "MCP.OvenSchedulingAlgorithm.Interface.Implementation.Job, MCP.OvenSchedulingAlgorithm",
+      "Id": 12,
+      "Name": "Job 12",
+      "EarliestStart": "2020-12-01T02:55:00",
+      "LatestEnd": "2020-12-01T04:45:00",
+      "MinTime": 3540,
+      "MaxTime": 6000,
+      "Size": 16,
+      "AttributeIdPerMachine": {
+        "$type": "System.Collections.Generic.Dictionary`2[[System.Int32, System.Private.CoreLib],[System.Int32, System.Private.CoreLib]], System.Private.CoreLib",
+        "1": 1,
+        "2": 1
+      },
+      "EligibleMachines": [
+        1
+      ]
+    },
+    {
+      "$type": "MCP.OvenSchedulingAlgorithm.Interface.Implementation.Job, MCP.OvenSchedulingAlgorithm",
+      "Id": 13,
+      "Name": "Job 13",
+      "EarliestStart": "2020-12-01T03:05:00",
+      "LatestEnd": "2020-12-01T05:53:00",
+      "MinTime": 4560,
+      "MaxTime": 6000,
+      "Size": 10,
+      "AttributeIdPerMachine": {
+        "$type": "System.Collections.Generic.Dictionary`2[[System.Int32, System.Private.CoreLib],[System.Int32, System.Private.CoreLib]], System.Private.CoreLib",
+        "1": 1,
+        "2": 1
+      },
+      "EligibleMachines": [
+        2
+      ]
+    },
+    {
+      "$type": "MCP.OvenSchedulingAlgorithm.Interface.Implementation.Job, MCP.OvenSchedulingAlgorithm",
+      "Id": 14,
+      "Name": "Job 14",
+      "EarliestStart": "2020-12-01T00:20:00",
+      "LatestEnd": "2020-12-01T00:51:00",
+      "MinTime": 1500,
+      "MaxTime": 6000,
+      "Size": 1,
+      "AttributeIdPerMachine": {
+        "$type": "System.Collections.Generic.Dictionary`2[[System.Int32, System.Private.CoreLib],[System.Int32, System.Private.CoreLib]], System.Private.CoreLib",
+        "1": 2,
+        "2": 2
+      },
+      "EligibleMachines": [
+        2
+      ]
+    },
+    {
+      "$type": "MCP.OvenSchedulingAlgorithm.Interface.Implementation.Job, MCP.OvenSchedulingAlgorithm",
+      "Id": 15,
+      "Name": "Job 15",
+      "EarliestStart": "2020-12-01T00:10:00",
+      "LatestEnd": "2020-12-01T02:25:00",
+      "MinTime": 4680,
+      "MaxTime": 6000,
+      "Size": 13,
+      "AttributeIdPerMachine": {
+        "$type": "System.Collections.Generic.Dictionary`2[[System.Int32, System.Private.CoreLib],[System.Int32, System.Private.CoreLib]], System.Private.CoreLib",
+        "1": 1,
+        "2": 1
+      },
+      "EligibleMachines": [
+        2
+      ]
+    },
+    {
+      "$type": "MCP.OvenSchedulingAlgorithm.Interface.Implementation.Job, MCP.OvenSchedulingAlgorithm",
+      "Id": 16,
+      "Name": "Job 16",
+      "EarliestStart": "2020-12-01T03:26:00",
+      "LatestEnd": "2020-12-01T06:33:00",
+      "MinTime": 3540,
+      "MaxTime": 6000,
+      "Size": 15,
+      "AttributeIdPerMachine": {
+        "$type": "System.Collections.Generic.Dictionary`2[[System.Int32, System.Private.CoreLib],[System.Int32, System.Private.CoreLib]], System.Private.CoreLib",
+        "1": 1,
+        "2": 1
+      },
+      "EligibleMachines": [
+        2,
+        1
+      ]
+    },
+    {
+      "$type": "MCP.OvenSchedulingAlgorithm.Interface.Implementation.Job, MCP.OvenSchedulingAlgorithm",
+      "Id": 17,
+      "Name": "Job 17",
+      "EarliestStart": "2020-12-01T00:54:00",
+      "LatestEnd": "2020-12-01T04:40:00",
+      "MinTime": 5220,
+      "MaxTime": 6000,
+      "Size": 11,
+      "AttributeIdPerMachine": {
+        "$type": "System.Collections.Generic.Dictionary`2[[System.Int32, System.Private.CoreLib],[System.Int32, System.Private.CoreLib]], System.Private.CoreLib",
+        "1": 1,
+        "2": 1
+      },
+      "EligibleMachines": [
+        2
+      ]
+    },
+    {
+      "$type": "MCP.OvenSchedulingAlgorithm.Interface.Implementation.Job, MCP.OvenSchedulingAlgorithm",
+      "Id": 18,
+      "Name": "Job 18",
+      "EarliestStart": "2020-12-01T02:29:00",
+      "LatestEnd": "2020-12-01T02:34:00",
+      "MinTime": 120,
+      "MaxTime": 6000,
+      "Size": 14,
+      "AttributeIdPerMachine": {
+        "$type": "System.Collections.Generic.Dictionary`2[[System.Int32, System.Private.CoreLib],[System.Int32, System.Private.CoreLib]], System.Private.CoreLib",
+        "1": 1,
+        "2": 1
+      },
+      "EligibleMachines": [
+        1,
+        2
+      ]
+    },
+    {
+      "$type": "MCP.OvenSchedulingAlgorithm.Interface.Implementation.Job, MCP.OvenSchedulingAlgorithm",
+      "Id": 19,
+      "Name": "Job 19",
+      "EarliestStart": "2020-12-01T04:31:00",
+      "LatestEnd": "2020-12-01T06:06:00",
+      "MinTime": 1200,
+      "MaxTime": 6000,
+      "Size": 15,
+      "AttributeIdPerMachine": {
+        "$type": "System.Collections.Generic.Dictionary`2[[System.Int32, System.Private.CoreLib],[System.Int32, System.Private.CoreLib]], System.Private.CoreLib",
+        "1": 2,
+        "2": 2
+      },
+      "EligibleMachines": [
+        1
+      ]
+    },
+    {
+      "$type": "MCP.OvenSchedulingAlgorithm.Interface.Implementation.Job, MCP.OvenSchedulingAlgorithm",
+      "Id": 20,
+      "Name": "Job 20",
+      "EarliestStart": "2020-12-01T00:05:00",
+      "LatestEnd": "2020-12-01T03:20:00",
+      "MinTime": 5460,
+      "MaxTime": 6000,
+      "Size": 4,
+      "AttributeIdPerMachine": {
+        "$type": "System.Collections.Generic.Dictionary`2[[System.Int32, System.Private.CoreLib],[System.Int32, System.Private.CoreLib]], System.Private.CoreLib",
+        "1": 2,
+        "2": 2
+      },
+      "EligibleMachines": [
+        2,
+        1
+      ]
+    },
+    {
+      "$type": "MCP.OvenSchedulingAlgorithm.Interface.Implementation.Job, MCP.OvenSchedulingAlgorithm",
+      "Id": 21,
+      "Name": "Job 21",
+      "EarliestStart": "2020-12-01T03:52:00",
+      "LatestEnd": "2020-12-01T10:29:00",
+      "MinTime": 5220,
+      "MaxTime": 6000,
+      "Size": 9,
+      "AttributeIdPerMachine": {
+        "$type": "System.Collections.Generic.Dictionary`2[[System.Int32, System.Private.CoreLib],[System.Int32, System.Private.CoreLib]], System.Private.CoreLib",
+        "1": 2,
+        "2": 2
+      },
+      "EligibleMachines": [
+        1
+      ]
+    },
+    {
+      "$type": "MCP.OvenSchedulingAlgorithm.Interface.Implementation.Job, MCP.OvenSchedulingAlgorithm",
+      "Id": 22,
+      "Name": "Job 22",
+      "EarliestStart": "2020-12-01T04:25:00",
+      "LatestEnd": "2020-12-01T06:29:00",
+      "MinTime": 1980,
+      "MaxTime": 6000,
+      "Size": 8,
+      "AttributeIdPerMachine": {
+        "$type": "System.Collections.Generic.Dictionary`2[[System.Int32, System.Private.CoreLib],[System.Int32, System.Private.CoreLib]], System.Private.CoreLib",
+        "1": 2,
+        "2": 2
+      },
+      "EligibleMachines": [
+        2
+      ]
+    },
+    {
+      "$type": "MCP.OvenSchedulingAlgorithm.Interface.Implementation.Job, MCP.OvenSchedulingAlgorithm",
+      "Id": 23,
+      "Name": "Job 23",
+      "EarliestStart": "2020-12-01T04:13:00",
+      "LatestEnd": "2020-12-01T08:39:00",
+      "MinTime": 5460,
+      "MaxTime": 6000,
+      "Size": 9,
+      "AttributeIdPerMachine": {
+        "$type": "System.Collections.Generic.Dictionary`2[[System.Int32, System.Private.CoreLib],[System.Int32, System.Private.CoreLib]], System.Private.CoreLib",
+        "1": 2,
+        "2": 2
+      },
+      "EligibleMachines": [
+        2,
+        1
+      ]
+    },
+    {
+      "$type": "MCP.OvenSchedulingAlgorithm.Interface.Implementation.Job, MCP.OvenSchedulingAlgorithm",
+      "Id": 24,
+      "Name": "Job 24",
+      "EarliestStart": "2020-12-01T04:09:00",
+      "LatestEnd": "2020-12-01T10:49:00",
+      "MinTime": 5880,
+      "MaxTime": 6000,
+      "Size": 5,
+      "AttributeIdPerMachine": {
+        "$type": "System.Collections.Generic.Dictionary`2[[System.Int32, System.Private.CoreLib],[System.Int32, System.Private.CoreLib]], System.Private.CoreLib",
+        "1": 1,
+        "2": 1
+      },
+      "EligibleMachines": [
+        2
+      ]
+    },
+    {
+      "$type": "MCP.OvenSchedulingAlgorithm.Interface.Implementation.Job, MCP.OvenSchedulingAlgorithm",
+      "Id": 25,
+      "Name": "Job 25",
+      "EarliestStart": "2020-12-01T00:56:00",
+      "LatestEnd": "2020-12-01T02:32:00",
+      "MinTime": 2280,
+      "MaxTime": 6000,
+      "Size": 18,
+      "AttributeIdPerMachine": {
+        "$type": "System.Collections.Generic.Dictionary`2[[System.Int32, System.Private.CoreLib],[System.Int32, System.Private.CoreLib]], System.Private.CoreLib",
+        "1": 2,
+        "2": 2
+      },
+      "EligibleMachines": [
+        2
+      ]
+    },
+    {
+      "$type": "MCP.OvenSchedulingAlgorithm.Interface.Implementation.Job, MCP.OvenSchedulingAlgorithm",
+      "Id": 26,
+      "Name": "Job 26",
+      "EarliestStart": "2020-12-01T04:21:00",
+      "LatestEnd": "2020-12-01T04:41:00",
+      "MinTime": 420,
+      "MaxTime": 6000,
+      "Size": 16,
+      "AttributeIdPerMachine": {
+        "$type": "System.Collections.Generic.Dictionary`2[[System.Int32, System.Private.CoreLib],[System.Int32, System.Private.CoreLib]], System.Private.CoreLib",
+        "1": 2,
+        "2": 2
+      },
+      "EligibleMachines": [
+        1
+      ]
+    },
+    {
+      "$type": "MCP.OvenSchedulingAlgorithm.Interface.Implementation.Job, MCP.OvenSchedulingAlgorithm",
+      "Id": 27,
+      "Name": "Job 27",
+      "EarliestStart": "2020-12-01T01:13:00",
+      "LatestEnd": "2020-12-01T02:30:00",
+      "MinTime": 1800,
+      "MaxTime": 6000,
+      "Size": 3,
+      "AttributeIdPerMachine": {
+        "$type": "System.Collections.Generic.Dictionary`2[[System.Int32, System.Private.CoreLib],[System.Int32, System.Private.CoreLib]], System.Private.CoreLib",
+        "1": 2,
+        "2": 2
+      },
+      "EligibleMachines": [
+        2,
+        1
+      ]
+    },
+    {
+      "$type": "MCP.OvenSchedulingAlgorithm.Interface.Implementation.Job, MCP.OvenSchedulingAlgorithm",
+      "Id": 28,
+      "Name": "Job 28",
+      "EarliestStart": "2020-12-01T01:09:00",
+      "LatestEnd": "2020-12-01T08:04:00",
+      "MinTime": 5160,
+      "MaxTime": 6000,
+      "Size": 17,
+      "AttributeIdPerMachine": {
+        "$type": "System.Collections.Generic.Dictionary`2[[System.Int32, System.Private.CoreLib],[System.Int32, System.Private.CoreLib]], System.Private.CoreLib",
+        "1": 2,
+        "2": 2
+      },
+      "EligibleMachines": [
+        2
+      ]
+    },
+    {
+      "$type": "MCP.OvenSchedulingAlgorithm.Interface.Implementation.Job, MCP.OvenSchedulingAlgorithm",
+      "Id": 29,
+      "Name": "Job 29",
+      "EarliestStart": "2020-12-01T01:31:00",
+      "LatestEnd": "2020-12-01T03:29:00",
+      "MinTime": 5940,
+      "MaxTime": 6000,
+      "Size": 1,
+      "AttributeIdPerMachine": {
+        "$type": "System.Collections.Generic.Dictionary`2[[System.Int32, System.Private.CoreLib],[System.Int32, System.Private.CoreLib]], System.Private.CoreLib",
+        "1": 1,
+        "2": 1
+      },
+      "EligibleMachines": [
+        1
+      ]
+    },
+    {
+      "$type": "MCP.OvenSchedulingAlgorithm.Interface.Implementation.Job, MCP.OvenSchedulingAlgorithm",
+      "Id": 30,
+      "Name": "Job 30",
+      "EarliestStart": "2020-12-01T03:53:00",
+      "LatestEnd": "2020-12-01T07:53:00",
+      "MinTime": 4560,
+      "MaxTime": 6000,
+      "Size": 2,
+      "AttributeIdPerMachine": {
+        "$type": "System.Collections.Generic.Dictionary`2[[System.Int32, System.Private.CoreLib],[System.Int32, System.Private.CoreLib]], System.Private.CoreLib",
+        "1": 1,
+        "2": 1
+      },
+      "EligibleMachines": [
+        1
+      ]
+    },
+    {
+      "$type": "MCP.OvenSchedulingAlgorithm.Interface.Implementation.Job, MCP.OvenSchedulingAlgorithm",
+      "Id": 31,
+      "Name": "Job 31",
+      "EarliestStart": "2020-12-01T02:52:00",
+      "LatestEnd": "2020-12-01T04:01:00",
+      "MinTime": 3120,
+      "MaxTime": 6000,
+      "Size": 17,
+      "AttributeIdPerMachine": {
+        "$type": "System.Collections.Generic.Dictionary`2[[System.Int32, System.Private.CoreLib],[System.Int32, System.Private.CoreLib]], System.Private.CoreLib",
+        "1": 2,
+        "2": 2
+      },
+      "EligibleMachines": [
+        2
+      ]
+    },
+    {
+      "$type": "MCP.OvenSchedulingAlgorithm.Interface.Implementation.Job, MCP.OvenSchedulingAlgorithm",
+      "Id": 32,
+      "Name": "Job 32",
+      "EarliestStart": "2020-12-01T02:30:00",
+      "LatestEnd": "2020-12-01T02:47:00",
+      "MinTime": 960,
+      "MaxTime": 6000,
+      "Size": 14,
+      "AttributeIdPerMachine": {
+        "$type": "System.Collections.Generic.Dictionary`2[[System.Int32, System.Private.CoreLib],[System.Int32, System.Private.CoreLib]], System.Private.CoreLib",
+        "1": 2,
+        "2": 2
+      },
+      "EligibleMachines": [
+        1,
+        2
+      ]
+    },
+    {
+      "$type": "MCP.OvenSchedulingAlgorithm.Interface.Implementation.Job, MCP.OvenSchedulingAlgorithm",
+      "Id": 33,
+      "Name": "Job 33",
+      "EarliestStart": "2020-12-01T01:32:00",
+      "LatestEnd": "2020-12-01T04:31:00",
+      "MinTime": 2340,
+      "MaxTime": 6000,
+      "Size": 10,
+      "AttributeIdPerMachine": {
+        "$type": "System.Collections.Generic.Dictionary`2[[System.Int32, System.Private.CoreLib],[System.Int32, System.Private.CoreLib]], System.Private.CoreLib",
+        "1": 1,
+        "2": 1
+      },
+      "EligibleMachines": [
+        2,
+        1
+      ]
+    },
+    {
+      "$type": "MCP.OvenSchedulingAlgorithm.Interface.Implementation.Job, MCP.OvenSchedulingAlgorithm",
+      "Id": 34,
+      "Name": "Job 34",
+      "EarliestStart": "2020-12-01T02:44:00",
+      "LatestEnd": "2020-12-01T03:36:00",
+      "MinTime": 1320,
+      "MaxTime": 6000,
+      "Size": 17,
+      "AttributeIdPerMachine": {
+        "$type": "System.Collections.Generic.Dictionary`2[[System.Int32, System.Private.CoreLib],[System.Int32, System.Private.CoreLib]], System.Private.CoreLib",
+        "1": 2,
+        "2": 2
+      },
+      "EligibleMachines": [
+        1,
+        2
+      ]
+    },
+    {
+      "$type": "MCP.OvenSchedulingAlgorithm.Interface.Implementation.Job, MCP.OvenSchedulingAlgorithm",
+      "Id": 35,
+      "Name": "Job 35",
+      "EarliestStart": "2020-12-01T02:56:00",
+      "LatestEnd": "2020-12-01T05:02:00",
+      "MinTime": 1560,
+      "MaxTime": 6000,
+      "Size": 6,
+      "AttributeIdPerMachine": {
+        "$type": "System.Collections.Generic.Dictionary`2[[System.Int32, System.Private.CoreLib],[System.Int32, System.Private.CoreLib]], System.Private.CoreLib",
+        "1": 2,
+        "2": 2
+      },
+      "EligibleMachines": [
+        1
+      ]
+    },
+    {
+      "$type": "MCP.OvenSchedulingAlgorithm.Interface.Implementation.Job, MCP.OvenSchedulingAlgorithm",
+      "Id": 36,
+      "Name": "Job 36",
+      "EarliestStart": "2020-12-01T03:15:00",
+      "LatestEnd": "2020-12-01T06:16:00",
+      "MinTime": 4500,
+      "MaxTime": 6000,
+      "Size": 12,
+      "AttributeIdPerMachine": {
+        "$type": "System.Collections.Generic.Dictionary`2[[System.Int32, System.Private.CoreLib],[System.Int32, System.Private.CoreLib]], System.Private.CoreLib",
+        "1": 2,
+        "2": 2
+      },
+      "EligibleMachines": [
+        1,
+        2
+      ]
+    },
+    {
+      "$type": "MCP.OvenSchedulingAlgorithm.Interface.Implementation.Job, MCP.OvenSchedulingAlgorithm",
+      "Id": 37,
+      "Name": "Job 37",
+      "EarliestStart": "2020-12-01T02:57:00",
+      "LatestEnd": "2020-12-01T06:06:00",
+      "MinTime": 4440,
+      "MaxTime": 6000,
+      "Size": 15,
+      "AttributeIdPerMachine": {
+        "$type": "System.Collections.Generic.Dictionary`2[[System.Int32, System.Private.CoreLib],[System.Int32, System.Private.CoreLib]], System.Private.CoreLib",
+        "1": 2,
+        "2": 2
+      },
+      "EligibleMachines": [
+        2
+      ]
+    },
+    {
+      "$type": "MCP.OvenSchedulingAlgorithm.Interface.Implementation.Job, MCP.OvenSchedulingAlgorithm",
+      "Id": 38,
+      "Name": "Job 38",
+      "EarliestStart": "2020-12-01T03:36:00",
+      "LatestEnd": "2020-12-01T08:27:00",
+      "MinTime": 5400,
+      "MaxTime": 6000,
+      "Size": 7,
+      "AttributeIdPerMachine": {
+        "$type": "System.Collections.Generic.Dictionary`2[[System.Int32, System.Private.CoreLib],[System.Int32, System.Private.CoreLib]], System.Private.CoreLib",
+        "1": 2,
+        "2": 2
+      },
+      "EligibleMachines": [
+        2,
+        1
+      ]
+    },
+    {
+      "$type": "MCP.OvenSchedulingAlgorithm.Interface.Implementation.Job, MCP.OvenSchedulingAlgorithm",
+      "Id": 39,
+      "Name": "Job 39",
+      "EarliestStart": "2020-12-01T04:27:00",
+      "LatestEnd": "2020-12-01T04:46:00",
+      "MinTime": 540,
+      "MaxTime": 6000,
+      "Size": 17,
+      "AttributeIdPerMachine": {
+        "$type": "System.Collections.Generic.Dictionary`2[[System.Int32, System.Private.CoreLib],[System.Int32, System.Private.CoreLib]], System.Private.CoreLib",
+        "1": 2,
+        "2": 2
+      },
+      "EligibleMachines": [
+        2,
+        1
+      ]
+    },
+    {
+      "$type": "MCP.OvenSchedulingAlgorithm.Interface.Implementation.Job, MCP.OvenSchedulingAlgorithm",
+      "Id": 40,
+      "Name": "Job 40",
+      "EarliestStart": "2020-12-01T02:12:00",
+      "LatestEnd": "2020-12-01T03:52:00",
+      "MinTime": 1800,
+      "MaxTime": 6000,
+      "Size": 17,
+      "AttributeIdPerMachine": {
+        "$type": "System.Collections.Generic.Dictionary`2[[System.Int32, System.Private.CoreLib],[System.Int32, System.Private.CoreLib]], System.Private.CoreLib",
+        "1": 2,
+        "2": 2
+      },
+      "EligibleMachines": [
+        1,
+        2
+      ]
+    },
+    {
+      "$type": "MCP.OvenSchedulingAlgorithm.Interface.Implementation.Job, MCP.OvenSchedulingAlgorithm",
+      "Id": 41,
+      "Name": "Job 41",
+      "EarliestStart": "2020-12-01T00:27:00",
+      "LatestEnd": "2020-12-01T04:53:00",
+      "MinTime": 4200,
+      "MaxTime": 6000,
+      "Size": 9,
+      "AttributeIdPerMachine": {
+        "$type": "System.Collections.Generic.Dictionary`2[[System.Int32, System.Private.CoreLib],[System.Int32, System.Private.CoreLib]], System.Private.CoreLib",
+        "1": 1,
+        "2": 1
+      },
+      "EligibleMachines": [
+        1,
+        2
+      ]
+    },
+    {
+      "$type": "MCP.OvenSchedulingAlgorithm.Interface.Implementation.Job, MCP.OvenSchedulingAlgorithm",
+      "Id": 42,
+      "Name": "Job 42",
+      "EarliestStart": "2020-12-01T03:09:00",
+      "LatestEnd": "2020-12-01T09:29:00",
+      "MinTime": 5520,
+      "MaxTime": 6000,
+      "Size": 1,
+      "AttributeIdPerMachine": {
+        "$type": "System.Collections.Generic.Dictionary`2[[System.Int32, System.Private.CoreLib],[System.Int32, System.Private.CoreLib]], System.Private.CoreLib",
+        "1": 2,
+        "2": 2
+      },
+      "EligibleMachines": [
+        2,
+        1
+      ]
+    },
+    {
+      "$type": "MCP.OvenSchedulingAlgorithm.Interface.Implementation.Job, MCP.OvenSchedulingAlgorithm",
+      "Id": 43,
+      "Name": "Job 43",
+      "EarliestStart": "2020-12-01T00:36:00",
+      "LatestEnd": "2020-12-01T00:52:00",
+      "MinTime": 360,
+      "MaxTime": 6000,
+      "Size": 20,
+      "AttributeIdPerMachine": {
+        "$type": "System.Collections.Generic.Dictionary`2[[System.Int32, System.Private.CoreLib],[System.Int32, System.Private.CoreLib]], System.Private.CoreLib",
+        "1": 1,
+        "2": 1
+      },
+      "EligibleMachines": [
+        1
+      ]
+    },
+    {
+      "$type": "MCP.OvenSchedulingAlgorithm.Interface.Implementation.Job, MCP.OvenSchedulingAlgorithm",
+      "Id": 44,
+      "Name": "Job 44",
+      "EarliestStart": "2020-12-01T02:02:00",
+      "LatestEnd": "2020-12-01T03:49:00",
+      "MinTime": 3960,
+      "MaxTime": 6000,
+      "Size": 17,
+      "AttributeIdPerMachine": {
+        "$type": "System.Collections.Generic.Dictionary`2[[System.Int32, System.Private.CoreLib],[System.Int32, System.Private.CoreLib]], System.Private.CoreLib",
+        "1": 1,
+        "2": 1
+      },
+      "EligibleMachines": [
+        2
+      ]
+    },
+    {
+      "$type": "MCP.OvenSchedulingAlgorithm.Interface.Implementation.Job, MCP.OvenSchedulingAlgorithm",
+      "Id": 45,
+      "Name": "Job 45",
+      "EarliestStart": "2020-12-01T02:59:00",
+      "LatestEnd": "2020-12-01T04:16:00",
+      "MinTime": 3900,
+      "MaxTime": 6000,
+      "Size": 20,
+      "AttributeIdPerMachine": {
+        "$type": "System.Collections.Generic.Dictionary`2[[System.Int32, System.Private.CoreLib],[System.Int32, System.Private.CoreLib]], System.Private.CoreLib",
+        "1": 1,
+        "2": 1
+      },
+      "EligibleMachines": [
+        1,
+        2
+      ]
+    },
+    {
+      "$type": "MCP.OvenSchedulingAlgorithm.Interface.Implementation.Job, MCP.OvenSchedulingAlgorithm",
+      "Id": 46,
+      "Name": "Job 46",
+      "EarliestStart": "2020-12-01T00:16:00",
+      "LatestEnd": "2020-12-01T01:37:00",
+      "MinTime": 3180,
+      "MaxTime": 6000,
+      "Size": 10,
+      "AttributeIdPerMachine": {
+        "$type": "System.Collections.Generic.Dictionary`2[[System.Int32, System.Private.CoreLib],[System.Int32, System.Private.CoreLib]], System.Private.CoreLib",
+        "1": 1,
+        "2": 1
+      },
+      "EligibleMachines": [
+        2
+      ]
+    },
+    {
+      "$type": "MCP.OvenSchedulingAlgorithm.Interface.Implementation.Job, MCP.OvenSchedulingAlgorithm",
+      "Id": 47,
+      "Name": "Job 47",
+      "EarliestStart": "2020-12-01T01:06:00",
+      "LatestEnd": "2020-12-01T03:30:00",
+      "MinTime": 2700,
+      "MaxTime": 6000,
+      "Size": 1,
+      "AttributeIdPerMachine": {
+        "$type": "System.Collections.Generic.Dictionary`2[[System.Int32, System.Private.CoreLib],[System.Int32, System.Private.CoreLib]], System.Private.CoreLib",
+        "1": 1,
+        "2": 1
+      },
+      "EligibleMachines": [
+        2
+      ]
+    },
+    {
+      "$type": "MCP.OvenSchedulingAlgorithm.Interface.Implementation.Job, MCP.OvenSchedulingAlgorithm",
+      "Id": 48,
+      "Name": "Job 48",
+      "EarliestStart": "2020-12-01T04:30:00",
+      "LatestEnd": "2020-12-01T10:33:00",
+      "MinTime": 4500,
+      "MaxTime": 6000,
+      "Size": 15,
+      "AttributeIdPerMachine": {
+        "$type": "System.Collections.Generic.Dictionary`2[[System.Int32, System.Private.CoreLib],[System.Int32, System.Private.CoreLib]], System.Private.CoreLib",
+        "1": 1,
+        "2": 1
+      },
+      "EligibleMachines": [
+        1
+      ]
+    },
+    {
+      "$type": "MCP.OvenSchedulingAlgorithm.Interface.Implementation.Job, MCP.OvenSchedulingAlgorithm",
+      "Id": 49,
+      "Name": "Job 49",
+      "EarliestStart": "2020-12-01T02:48:00",
+      "LatestEnd": "2020-12-01T05:33:00",
+      "MinTime": 3120,
+      "MaxTime": 6000,
+      "Size": 16,
+      "AttributeIdPerMachine": {
+        "$type": "System.Collections.Generic.Dictionary`2[[System.Int32, System.Private.CoreLib],[System.Int32, System.Private.CoreLib]], System.Private.CoreLib",
+        "1": 1,
+        "2": 1
+      },
+      "EligibleMachines": [
+        2
+      ]
+    },
+    {
+      "$type": "MCP.OvenSchedulingAlgorithm.Interface.Implementation.Job, MCP.OvenSchedulingAlgorithm",
+      "Id": 50,
+      "Name": "Job 50",
+      "EarliestStart": "2020-12-01T04:04:00",
+      "LatestEnd": "2020-12-01T05:36:00",
+      "MinTime": 2340,
+      "MaxTime": 6000,
+      "Size": 8,
+      "AttributeIdPerMachine": {
+        "$type": "System.Collections.Generic.Dictionary`2[[System.Int32, System.Private.CoreLib],[System.Int32, System.Private.CoreLib]], System.Private.CoreLib",
+        "1": 1,
+        "2": 1
+      },
+      "EligibleMachines": [
+        1
+      ]
+    }
+  ],
+  "Attributes": {
+    "$type": "System.Collections.Generic.Dictionary`2[[System.Int32, System.Private.CoreLib],[MCP.OvenSchedulingAlgorithm.Interface.IAttribute, MCP.OvenSchedulingAlgorithm]], System.Private.CoreLib",
+    "1": {
+      "$type": "MCP.OvenSchedulingAlgorithm.Interface.Implementation.Attribute, MCP.OvenSchedulingAlgorithm",
+      "Id": 1,
+      "Name": "Attribute 1",
+      "SetupCostsAttribute": [
+        12,
+        23
+      ],
+      "SetupTimesAttribute": [
+        720,
+        1260
+      ]
+    },
+    "2": {
+      "$type": "MCP.OvenSchedulingAlgorithm.Interface.Implementation.Attribute, MCP.OvenSchedulingAlgorithm",
+      "Id": 2,
+      "Name": "Attribute 2",
+      "SetupCostsAttribute": [
+        19,
+        7
+      ],
+      "SetupTimesAttribute": [
+        1080,
+        240
+      ]
+    }
+  },
+  "SchedulingHorizonStart": "2020-12-01T00:00:00",
+  "SchedulingHorizonEnd": "2020-12-11T16:43:00"
+}

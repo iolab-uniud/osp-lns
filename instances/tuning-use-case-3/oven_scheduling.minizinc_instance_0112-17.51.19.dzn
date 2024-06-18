@@ -1,0 +1,43 @@
+l=2671;
+a=5;
+setup_costs=[|11,3,11,5,14,
+|14,23,7,11,5,
+|0,5,15,24,20,
+|7,7,23,17,2,
+|10,0,23,20,19,
+|0,0,0,0,0,|];
+setup_times=[|25,21,23,17,5,
+|9,16,20,23,8,
+|19,7,23,10,22,
+|6,0,0,23,12,
+|4,7,9,6,3,
+|0,0,0,0,0,|];
+m=2;
+min_cap=[0, 0];
+max_cap=[38, 25];
+
+initState=[1, 5];
+s=2;
+m_a_s = [|1788,2368,
+|1004,1693|];
+m_a_e = [|2304,2594,
+|1531,2065|];
+n=10;
+eligible_machine =[{1, 2}, {1}, {1, 2}, {1}, {1}, {2}, {1, 2}, {1, 2}, {1, 2}, {1}];
+earliest_start=[39, 29, 31, 8, 6, 22, 18, 8, 7, 26];
+latest_end=[100, 51, 80, 76, 32, 59, 51, 96, 89, 111];
+min_time=[47, 18, 46, 43, 26, 37, 20, 47, 78, 46];
+max_time=[53, 99, 51, 75, 90, 68, 58, 97, 90, 57];
+size=[3, 4, 2, 5, 5, 5, 3, 1, 5, 2];
+attribute=[3, 3, 4, 3, 1, 2, 5, 1, 4, 5];
+
+upper_bound_integer_objective=1230000;
+mult_factor_total_runtime=1200;
+mult_factor_finished_toolate=49200;
+mult_factor_total_setuptimes=0;
+mult_factor_total_setupcosts=1025;
+running_time_bound=408;
+min_duration=18;
+max_duration=78;
+max_setup_time=25;
+max_setup_cost=24;
